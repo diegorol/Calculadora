@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.usuario.calculadora.MainActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initScreen"
+        android:id="@+id/resultado"
+        android:width="250dp"
+        android:height="40dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/BLANCO"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textSize="30sp"
+        android:textAlignment="gravity"
+        android:gravity="right" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:id="@+id/btn1"
+            android:onClick="addNumber"
+            android:textSize="24sp" />
+        <Button
+            android:text="@string/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:id="@+id/btn2"
+            android:onClick="addNumber"
+            android:textSize="24sp" />
+
+        <Button
+            android:text="@string/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:id="@+id/btn3"
+            android:onClick="addNumber"
+            android:textSize="24sp" />
+        <Button
+            android:text="@string/btnMas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:id="@+id/btnMas"
+            android:onClick="addSuma"
+            android:textSize="24sp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:id="@+id/btn4"
+            android:onClick="addNumber"
+            android:textSize="24sp" />
+        <Button
+            android:text="@string/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:id="@+id/btn5"
+            android:onClick="addNumber"
+            android:textSize="24sp" />
+
+        <Button
+            android:text="@string/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:id="@+id/btn6"
+            android:onClick="addNumber"
+            android:textSize="24sp"/>
+        <Button
+            android:text="@string/btnMenos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:id="@+id/btnMenos"
+            android:onClick="restaTotal"
+            android:textSize="24sp"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:id="@+id/btn7"
+            android:onClick="addNumber"
+            android:textSize="24sp"/>
+        <Button
+            android:text="@string/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:id="@+id/btn8"
+            android:onClick="addNumber"
+            android:textSize="24sp"/>
+
+        <Button
+            android:text="@string/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:id="@+id/btn9"
+            android:onClick="addNumber"
+            android:textSize="24sp"/>
+        <Button
+            android:text="@string/btnProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:id="@+id/btnProducto"
+            android:onClick="productoTotal"
+            android:textSize="24sp"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/addDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:id="@+id/btnComa"
+            android:onClick="addDot"
+            android:textSize="24sp"/>
+        <Button
+            android:text="@string/btnCero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:id="@+id/btnCero"
+            android:textSize="24sp"/>
+
+        <Button
+            android:text="@string/btnIgual"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:id="@+id/btnIgual"
+            android:onClick="totalOperacion"
+            android:textSize="24sp"
+            android:background="@android:color/holo_green_light" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <!-- -->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <Button
+        android:text="@string/borrar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:id="@+id/btnBorrar"
+        android:onClick="clearNumber"
+        android:textSize="22sp"
+        android:background="@color/AMARILLO" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</RelativeLayout>
