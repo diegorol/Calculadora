@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void addSuma(View view) {
         oper1=(TextView)findViewById(R.id.resultado);
-        acumulado=Integer.parseInt(oper1.getText().toString());
+        acumulado=Float.parseFloat(oper1.getText().toString());
         TextView Screen = (TextView)findViewById(R.id.resultado);
         Screen.setText("");
         operator = '+';
@@ -55,21 +55,21 @@ public class MainActivity extends AppCompatActivity {
     public void totalOperacion(View view) {
         if(operator== '+'){
             oper2=(TextView)findViewById(R.id.resultado);
-            acumulado += Integer.parseInt(oper2.getText().toString());
+            acumulado += Float.parseFloat(oper2.getText().toString());
             TextView Screen = (TextView)findViewById(R.id.resultado);
             Screen.setText("" + acumulado);
         }
 
         if(operator== '*'){
             oper2=(TextView)findViewById(R.id.resultado);
-            acumulado *= Integer.parseInt(oper2.getText().toString());
+            acumulado *= Float.parseFloat(oper2.getText().toString());
             TextView Screen = (TextView)findViewById(R.id.resultado);
             Screen.setText("" + acumulado);
         }
 
         if(operator== '-'){
             oper2=(TextView)findViewById(R.id.resultado);
-            acumulado -= Integer.parseInt(oper2.getText().toString());
+            acumulado -= Float.parseFloat(oper2.getText().toString());
             TextView Screen = (TextView)findViewById(R.id.resultado);
             Screen.setText("" + acumulado);
         }
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void productoTotal(View view) {
         oper1=(TextView)findViewById(R.id.resultado);
-        acumulado=Integer.parseInt(oper1.getText().toString());
+        acumulado=Float.parseFloat(oper1.getText().toString());
         TextView Screen = (TextView)findViewById(R.id.resultado);
         Screen.setText("");
         operator = '*';
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void restaTotal(View view) {
         oper1=(TextView)findViewById(R.id.resultado);
-        acumulado=Integer.parseInt(oper1.getText().toString());
+        acumulado=Float.parseFloat(oper1.getText().toString());
         TextView Screen = (TextView)findViewById(R.id.resultado);
         Screen.setText("");
         operator = '-';
